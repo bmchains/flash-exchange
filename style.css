@@ -1,0 +1,96 @@
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#050510;
+color:white;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+background:#07071a;
+border-bottom:1px solid #1a1aff;
+}
+
+.nav a{
+margin-left:20px;
+color:#9aa4ff;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:48px;
+text-shadow:0 0 15px #3b5bff;
+}
+
+.btn{
+background:#3b5bff;
+padding:12px 24px;
+border:none;
+color:white;
+border-radius:8px;
+box-shadow:0 0 15px #3b5bff;
+cursor:pointer;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:60px;
+}
+
+.card{
+background:#0c0c25;
+padding:30px;
+border-radius:12px;
+box-shadow:0 0 12px #1a1aff44;
+}
+
+.logos{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:40px;
+opacity:0.8;
+}
+
+.logos img{
+width:60px;
+}
+
+.swap{
+padding:80px;
+text-align:center;
+}
+
+.swap-box{
+background:#0c0c25;
+padding:40px;
+border-radius:12px;
+width:320px;
+margin:auto;
+box-shadow:0 0 20px #3b5bff44;
+}
+
+.swap-box input, .swap-box select{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+background:#050510;
+color:white;
+border:1px solid #1a1aff;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#777;
+}
