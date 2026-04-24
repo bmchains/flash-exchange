@@ -1,51 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flash Exchange</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flash Exchange | Crypto Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
 
-<header class="nav">
-<div class="logo">⚡ Flash Exchange</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="swap.html">Swap</a>
-<a href="#features">Features</a>
-<a href="#security">Security</a>
-</nav>
-</header>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Flash Exchange home">
+      <span class="brand-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#14ffae"/>
+              <stop offset="100%" stop-color="#00d4ff"/>
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="32" r="30" stroke="url(#g)" stroke-width="3"/>
+          <path d="M35 8L16 36h14l-1 20 19-28H34l1-20Z" fill="url(#g)"/>
+        </svg>
+      </span>
+      <span class="brand-text">Flash<span>Exchange</span></span>
+    </a>
 
-<section class="hero">
-<h1>Next‑Gen Crypto Swaps</h1>
-<p>Instant. Secure. Neon‑fast.</p>
-<div id="countdown"></div>
-<a class="btn" href="swap.html">Launch App</a>
-</section>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
 
-<section class="logos">
-<img src="assets/logos/btc.svg">
-<img src="assets/logos/eth.svg">
-<img src="assets/logos/usdt.svg">
-</section>
+    <nav class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#features">Exchange</a>
+      <a href="swap.html">Swap</a>
+      <a href="#wallet">Wallet</a>
+      <a href="#support">Support</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
 
-<section id="features" class="grid">
-<div class="card"><h3>Instant Swaps</h3><p>Trade crypto in seconds.</p></div>
-<div class="card"><h3>Low Fees</h3><p>Minimal network and platform fees.</p></div>
-<div class="card"><h3>Secure</h3><p>Smart‑contract powered protection.</p></div>
-</section>
+  <main id="home">
+    <section class="hero reveal">
+      <div class="eyebrow">Next‑Generation Crypto Flash Trading Platform</div>
+      <h1 class="title glow">Flash Exchange</h1>
+      <p class="subtitle">Ultra-fast swaps, secure custody, low fees, and a premium on-chain experience designed for modern traders.</p>
 
-<section id="security" class="security">
-<h2>Security First</h2>
-<p>Audited contracts, encrypted connections, and wallet‑based authentication.</p>
-</section>
+      <div class="hero-actions">
+        <a href="swap.html" class="btn primary">Start Swap</a>
+        <a href="#features" class="btn ghost">Explore Features</a>
+      </div>
 
-<footer>
-<p>© 2026 Flash Exchange</p>
-</footer>
+      <div class="ticker-wrap">
+        <div class="ticker">
+          <span>BTC $68,421</span>
+          <span>ETH $3,512</span>
+          <span>SOL $182</span>
+          <span>BNB $595</span>
+          <span>XRP $0.54</span>
+          <span>AVAX $41.12</span>
+        </div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="swap-preview reveal" id="features">
+      <div class="panel">
+        <div class="panel-head">
+          <span>Live Swap</span>
+          <span class="status"><i></i> Online</span>
+        </div>
+        <div class="swap-card">
+          <div class="swap-row">
+            <div>
+              <small>You pay</small>
+              <strong>0.50 ETH</strong>
+            </div>
+            <div class="token-badge">ETH</div>
+          </div>
+          <div class="swap-arrow">⇅</div>
+          <div class="swap-row">
+            <div>
+              <small>You receive</small>
+              <strong>1,230.44 USDT</strong>
+            </div>
+            <div class="token-badge usdt">USDT</div>
+          </div>
+          <a href="swap.html" class="btn primary full">Open Swap Page</a>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <article class="card reveal">
+          <h3>Instant Swaps</h3>
+          <p>Trade assets instantly with lightning execution and optimized routing.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Security First</h3>
+          <p>Cold storage protection, encrypted flows, 2FA-ready security architecture.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Low Fees</h3>
+          <p>Competitive fees built for active users, liquidity seekers, and DeFi traders.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Proof of Reserves</h3>
+          <p>Transparent reserve visibility and a trust-first trading foundation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="info-section reveal" id="wallet">
+      <div class="info-card">
+        <h2>Wallet Integration</h2>
+        <p>Connect your wallet securely and manage assets across supported chains with a streamlined dashboard.</p>
+      </div>
+      <div class="info-card" id="support">
+        <h2>24/7 Support</h2>
+        <p>Need help? Our support center is designed to assist with onboarding, swaps, and account security.</p>
+      </div>
+      <div class="info-card" id="about">
+        <h2>Built for the Future</h2>
+        <p>Flash Exchange is crafted to feel fast, premium, responsive, and visually aligned with a modern crypto brand.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© 2026 Flash Exchange</div>
+    <div class="footer-links">
+      <a href="#">Twitter</a>
+      <a href="#">Discord</a>
+      <a href="#">Telegram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
