@@ -1,43 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Swap | Flash Exchange</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flash Exchange | Swap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
 
-<header class="nav">
-<div class="logo">⚡ Flash Exchange</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="swap.html">Swap</a>
-</nav>
-</header>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#14ffae"/>
+              <stop offset="100%" stop-color="#00d4ff"/>
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="32" r="30" stroke="url(#g2)" stroke-width="3"/>
+          <path d="M35 8L16 36h14l-1 20 19-28H34l1-20Z" fill="url(#g2)"/>
+        </svg>
+      </span>
+      <span class="brand-text">Flash<span>Exchange</span></span>
+    </a>
+    <nav class="navlinks show">
+      <a href="index.html">Home</a>
+      <a href="swap.html">Swap</a>
+    </nav>
+  </header>
 
-<section class="swap">
-<h1>Swap Crypto</h1>
-<div class="swap-box">
-<label>From</label>
-<input type="number" placeholder="0.0">
-<select>
-<option>BTC</option>
-<option>ETH</option>
-<option>USDT</option>
-</select>
+  <main class="swap-page">
+    <section class="swap-shell reveal">
+      <div class="swap-head">
+        <div>
+          <div class="eyebrow">Crypto Swap</div>
+          <h1 class="title small glow">Swap Tokens</h1>
+          <p class="subtitle">Select assets, review live rates, and execute a fast swap with a premium interface.</p>
+        </div>
+      </div>
 
-<label>To</label>
-<input type="number" placeholder="0.0">
-<select>
-<option>ETH</option>
-<option>BTC</option>
-<option>USDT</option>
-</select>
+      <div class="swap-card big">
+        <label class="field">
+          <span>From</span>
+          <div class="input-row">
+            <input value="0.50" />
+            <select>
+              <option>ETH</option><option>BTC</option><option>SOL</option><option>USDT</option>
+            </select>
+          </div>
+        </label>
 
-<button class="btn">Swap Now</button>
-</div>
-</section>
+        <div class="swap-arrow center">⇅</div>
 
+        <label class="field">
+          <span>To</span>
+          <div class="input-row">
+            <input value="1,230.44" />
+            <select>
+              <option>USDT</option><option>ETH</option><option>BTC</option><option>SOL</option>
+            </select>
+          </div>
+        </label>
+
+        <div class="swap-meta">
+          <span>Rate: 1 ETH = 2,460.88 USDT</span>
+          <span>Fee: 0.20%</span>
+          <span>Slippage: 0.5%</span>
+        </div>
+
+        <button class="btn primary full">Review Swap</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
